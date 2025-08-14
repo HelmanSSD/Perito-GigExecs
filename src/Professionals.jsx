@@ -106,43 +106,57 @@ export default function Professionals() {
         </div>
       </section>
 
-      {/* Three Panel Info Section */}
+      {/* Before You Join GigExecs Section */}
       <section className="py-20 bg-gradient-to-br from-[#012E46] to-[#0284C7] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-12 items-center">
-            {/* Left Panel */}
-            <div className="lg:col-span-2 space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Before You Join GigExecs
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#FACC15] to-[#EAB308] rounded-full"></div>
-              <p className="text-lg text-white/90 leading-relaxed">
-                Before you join our platform as a freelancer, there are a few things you should know. We believe that these measures are essential to providing a high-quality service for our clients, and we look forward to working with experienced and dedicated freelancers who share our commitment to excellence.
-              </p>
+          <div className="grid grid-cols-12 gap-6">
+            {/* Left Card - 2/3 width (8/12 columns) */}
+            <div className="col-span-12 lg:col-span-8">
+              <Card className="bg-white/10 backdrop-blur-md border-white/20 h-full">
+                <CardHeader>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-white">
+                      Before You Join GigExecs
+                    </h2>
+                    <div className="w-24 h-1 bg-gradient-to-r from-[#FACC15] to-[#EAB308] rounded-full"></div>
+                  </div>
+                  <CardDescription className="text-lg text-white/90 leading-relaxed">
+                    Before you join our platform as a freelancer, there are a few things you should know. We believe that these measures are essential to providing a high-quality service for our clients, and we look forward to working with experienced and dedicated freelancers who share our commitment to excellence.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
             </div>
 
-            {/* Middle Panel */}
-            <div className="text-center space-y-4">
-              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto">
-                <svg className="w-10 h-10 text-[#FACC15]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="text-lg font-medium">
-                All freelancers need to have at least 15 years of professional experience in their field before joining.
-              </p>
+            {/* Middle Card - 1/3 width (2/12 columns) */}
+            <div className="col-span-12 lg:col-span-2">
+              <Card className="bg-white/10 backdrop-blur-md border-white/20 h-full">
+                <CardHeader className="text-center">
+                  <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-10 h-10 text-[#FACC15]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <CardTitle className="text-lg font-medium text-white">
+                    All freelancers need to have at least 15 years of professional experience in their field before joining.
+                  </CardTitle>
+                </CardHeader>
+              </Card>
             </div>
 
-            {/* Right Panel */}
-            <div className="text-center space-y-4">
-              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto">
-                <svg className="w-10 h-10 text-[#FACC15]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <p className="text-lg font-medium">
-                Our support team will vet and verify each freelancer's profile before it is approved for use on the platform.
-              </p>
+            {/* Right Card - 1/3 width (2/12 columns) */}
+            <div className="col-span-12 lg:col-span-2">
+              <Card className="bg-white/10 backdrop-blur-md border-white/20 h-full">
+                <CardHeader className="text-center">
+                  <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-10 h-10 text-[#FACC15]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <CardTitle className="text-lg font-medium text-white">
+                    Our support team will vet and verify each freelancer's profile before it is approved for use on the platform.
+                  </CardTitle>
+                </CardHeader>
+              </Card>
             </div>
           </div>
         </div>
@@ -164,7 +178,7 @@ export default function Professionals() {
               </div>
             </div>
             <div className="order-1 lg:order-2 space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#FACC15] leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#0284C7] leading-tight">
                 Enjoy the lifestyle and the freedom of being a freelancer
               </h2>
               <p className="text-lg text-[#9CA3AF] leading-relaxed">
@@ -179,7 +193,7 @@ export default function Professionals() {
           {/* Band 2 - Image Right, Text Left */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#FACC15] leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#0284C7] leading-tight">
                 The new way of work through Freelancing is flexible and empowering
               </h2>
               <p className="text-lg text-[#9CA3AF] leading-relaxed">
@@ -214,7 +228,7 @@ export default function Professionals() {
               </div>
             </div>
             <div className="order-1 lg:order-2 space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#FACC15] leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#0284C7] leading-tight">
                 Unleashing Wisdom and Experience: Senior Professionals Empowering Clients through GigExecs
               </h2>
               <p className="text-lg text-[#9CA3AF] leading-relaxed">
@@ -237,7 +251,7 @@ export default function Professionals() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 p-0">
               <div className="relative">
                 <div className="bg-[#0284C7] text-white text-xs font-semibold px-3 py-1 rounded-full absolute top-4 right-4">
                   Freelancer
@@ -256,14 +270,14 @@ export default function Professionals() {
                 <div className="text-sm text-[#6B7280]">
                   GigExecs Insider | July 15, 2024
                 </div>
-                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors">
+                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors ml-auto">
                   Read More →
                 </a>
               </CardContent>
             </Card>
 
             {/* Card 2 */}
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 p-0">
               <div className="bg-gradient-to-br from-[#FACC15] to-[#EAB308] h-48 rounded-t-lg flex items-center justify-center">
                 <div className="text-[#012E46] text-center">
                   <div className="text-sm font-semibold mb-1">AI</div>
@@ -285,14 +299,14 @@ export default function Professionals() {
                 <div className="text-sm text-[#6B7280]">
                   Nuno G. Rodrigues | June 10, 2024
                 </div>
-                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors">
+                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors ml-auto">
                   Read More →
                 </a>
               </CardContent>
             </Card>
 
             {/* Card 3 */}
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 p-0">
               <div className="bg-gradient-to-br from-[#012E46] to-[#0284C7] h-48 rounded-t-lg flex items-center justify-center">
                 <div className="text-white text-center">
                   <div className="text-sm font-semibold mb-1">REMOTE,</div>
@@ -312,7 +326,7 @@ export default function Professionals() {
                 <div className="text-sm text-[#6B7280]">
                   Nuno G. Rodrigues | March 25, 2024
                 </div>
-                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors">
+                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors ml-auto">
                   Read More →
                 </a>
               </CardContent>
@@ -331,12 +345,12 @@ export default function Professionals() {
           <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg">
             <div className="grid lg:grid-cols-2 gap-12 mb-12">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#FACC15] mb-4 underline decoration-[#FACC15] decoration-2">
+                <h3 className="text-2xl font-bold text-[#0284C7] mb-4 underline decoration-[#0284C7] decoration-2">
                   Job Marketplace
                 </h3>
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-[#FACC15] mb-4 underline decoration-[#FACC15] decoration-2">
+                <h3 className="text-2xl font-bold text-[#0284C7] mb-4 underline decoration-[#0284C7] decoration-2">
                   Create a Job
                 </h3>
               </div>
@@ -431,7 +445,7 @@ export default function Professionals() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <CardTitle className="text-[#FACC15] text-xl text-center leading-tight">
+                  <CardTitle className="text-[#0284C7] text-xl text-center leading-tight">
                     {item.title}
                   </CardTitle>
                 </CardHeader>
@@ -462,25 +476,12 @@ export default function Professionals() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="py-20 bg-[#F5F5F5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#1F2937] mb-6">
-            Book a Call
-          </h2>
-          <p className="text-lg text-[#9CA3AF] mb-8 max-w-2xl mx-auto leading-relaxed">
-            Need help but don't have time to post, browse, or monitor your project? We can assist with that too.
-          </p>
-          <Button size="lg" className="bg-[#012E46] hover:bg-[#0284C7] text-white px-8 py-3">
-            Contact Us
-          </Button>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer className="bg-[#012E46] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             <div>
               <div className="text-2xl font-bold text-[#FACC15] mb-4">GigExecs</div>
               <p className="text-[#9CA3AF]">
@@ -488,19 +489,22 @@ export default function Professionals() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Platform</h3>
+              <h3 className="text-lg font-semibold mb-4">How it works</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#about" className="hover:text-white transition-colors">How It Works</a></li>
-                <li><a href="#newsletter" className="hover:text-white transition-colors">Join Now</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">How it works</a></li>
+                <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Support</h3>
+              <h3 className="text-lg font-semibold mb-4">About</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Support</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">About Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Help & Support</h3>
+              <ul className="space-y-2 text-[#9CA3AF]">
+                <li><a href="#" className="hover:text-white transition-colors">Help</a></li>
               </ul>
             </div>
             <div>
@@ -508,7 +512,6 @@ export default function Professionals() {
               <ul className="space-y-2 text-[#9CA3AF]">
                 <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cookie Policy</a></li>
               </ul>
             </div>
           </div>

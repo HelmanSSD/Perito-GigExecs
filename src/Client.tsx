@@ -87,7 +87,7 @@ export default function Client() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
           <div className="relative z-10">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1F2937] mb-6 leading-tight">
-              Experienced Skills at Your Fingertips with{' '}
+              Experienced Skills at your Fingertips with{' '}
               <span className="bg-gradient-to-r from-[#0284C7] to-[#FACC15] bg-clip-text text-transparent">
                 GigExecs
               </span>
@@ -155,7 +155,7 @@ export default function Client() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 p-0">
               <div className="relative">
                 <div className="bg-[#0284C7] text-white text-xs font-semibold px-3 py-1 rounded-full absolute top-4 right-4">
                   Freelancer
@@ -174,14 +174,14 @@ export default function Client() {
                 <div className="text-sm text-[#6B7280]">
                   GigExecs Insider | July 15, 2024
                 </div>
-                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors">
+                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors ml-auto">
                   Read More →
                 </a>
               </CardContent>
             </Card>
 
             {/* Card 2 */}
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 p-0">
               <div className="bg-gradient-to-br from-[#012E46] to-[#0284C7] h-48 rounded-t-lg flex items-center justify-center">
                 <div className="text-white text-center">
                   <div className="text-sm font-semibold mb-2">GIGEXECS UPDATE</div>
@@ -200,14 +200,14 @@ export default function Client() {
                 <div className="text-sm text-[#6B7280]">
                   Nuno G. Rodrigues | September 13, 2024
                 </div>
-                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors">
+                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors ml-auto">
                   Read More →
                 </a>
               </CardContent>
             </Card>
 
             {/* Card 3 */}
-            <Card className="bg-white hover:shadow-lg transition-shadow duration-300">
+            <Card className="bg-white hover:shadow-lg transition-shadow duration-300 p-0">
               <div className="bg-gradient-to-br from-[#FACC15] to-[#EAB308] h-48 rounded-t-lg flex items-center justify-center">
                 <div className="text-[#012E46] text-center">
                   <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -228,7 +228,7 @@ export default function Client() {
                 <div className="text-sm text-[#6B7280]">
                   Nuno G. Rodrigues | May 9, 2024
                 </div>
-                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors">
+                <a href="#" className="inline-flex items-center text-[#0284C7] hover:text-[#012E46] font-medium transition-colors ml-auto">
                   Read More →
                 </a>
               </CardContent>
@@ -332,7 +332,7 @@ export default function Client() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <CardTitle className="text-xl text-center leading-tight">
+                  <CardTitle className="text-[#0284C7] text-xl text-center leading-tight">
                     {item.title}
                   </CardTitle>
                 </CardHeader>
@@ -348,15 +348,14 @@ export default function Client() {
       </section>
 
       {/* CTA Banner Section */}
-      <section className="py-20 bg-[#012E46] relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-[#012E46] to-[#0284C7] relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="text-center lg:text-left">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Need help but don't have time to post, browse, or monitor your project? We can assist with that too.
-              </h2>
-            </div>
-            <Button size="lg" className="bg-white text-[#012E46] hover:bg-[#F5F5F5] px-8 py-3 text-lg font-semibold whitespace-nowrap">
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 lg:p-12 text-center">
+            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-8 leading-tight">
+              Need help but don't have time to post, browse, or monitor your project? We can assist with that too.
+            </h2>
+            <Button size="lg" className="bg-[#FACC15] hover:bg-[#EAB308] text-[#012E46] px-8 py-3 text-lg font-semibold">
               Book a Call
             </Button>
           </div>
@@ -366,7 +365,7 @@ export default function Client() {
       {/* Footer */}
       <footer className="bg-[#012E46] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             <div>
               <div className="text-2xl font-bold text-[#FACC15] mb-4">GigExecs</div>
               <p className="text-[#9CA3AF]">
@@ -374,19 +373,22 @@ export default function Client() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Platform</h3>
+              <h3 className="text-lg font-semibold mb-4">How it works</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#about" className="hover:text-white transition-colors">How It Works</a></li>
-                <li><a href="#newsletter" className="hover:text-white transition-colors">Join Now</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">How it works</a></li>
+                <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Support</h3>
+              <h3 className="text-lg font-semibold mb-4">About</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Support</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">About Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Help & Support</h3>
+              <ul className="space-y-2 text-[#9CA3AF]">
+                <li><a href="#" className="hover:text-white transition-colors">Help</a></li>
               </ul>
             </div>
             <div>
@@ -394,7 +396,6 @@ export default function Client() {
               <ul className="space-y-2 text-[#9CA3AF]">
                 <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cookie Policy</a></li>
               </ul>
             </div>
           </div>
