@@ -17,6 +17,12 @@ import Blog8 from './Blog8.jsx'
 import Blog9 from './Blog9.jsx'
 import Blog10 from './Blog10.jsx'
 import Pricing from './Pricing.jsx'
+import AboutUs from './AboutUs.jsx'
+import TermsOfService from './TermsOfService.jsx'
+import PrivacyPolicy from './PrivacyPolicy.jsx'
+import HelpCenter from './HelpCenter.jsx'
+import HCRoleConsultant from './HC_Role_Consultant.jsx'
+import HCRoleClients from './HC_Role_Clients.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -37,6 +43,12 @@ createRoot(document.getElementById('root')).render(
         <Route path="/blog/20-percent-challenge-flexible-work-2025" element={<Blog9 />} />
         <Route path="/blog/master-mental-clarity-stress-management-high-performers" element={<Blog10 />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/help" element={<HelpCenter />} />
+        <Route path="/help/consultant" element={<HCRoleConsultant />} />
+        <Route path="/help/client" element={<HCRoleClients />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

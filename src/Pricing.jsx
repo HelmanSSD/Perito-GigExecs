@@ -212,6 +212,27 @@ export default function Pricing() {
         </div>
       </nav>
 
+      {/* Breadcrumbs */}
+      <section className="py-8 bg-[#F5F5F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex" aria-label="Breadcrumb">
+            <ol className="flex items-center space-x-2">
+              <li>
+                <a href="/" className="text-[#6B7280] hover:text-[#0284C7] transition-colors">
+                  Home
+                </a>
+              </li>
+              <li className="flex items-center">
+                <svg className="w-4 h-4 text-[#9CA3AF] mx-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                </svg>
+                <span className="text-[#1F2937] font-medium">Pricing</span>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#F5F5F5] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -364,20 +385,20 @@ export default function Pricing() {
             <div>
               <h3 className="text-lg font-semibold mb-4">About</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="/" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/about-us" className="hover:text-white transition-colors">About Us</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Help & Support</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#" className="hover:text-white transition-colors">Help</a></li>
+                <li><a href="/help" className="hover:text-white transition-colors">Help</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Legal</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</a></li>
+                <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
               </ul>
             </div>
           </div>

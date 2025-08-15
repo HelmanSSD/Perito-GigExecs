@@ -525,20 +525,20 @@ export default function Blog8() {
             <div>
               <h3 className="text-lg font-semibold mb-4">About</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="/" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/about-us" className="hover:text-white transition-colors">About Us</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Help & Support</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#" className="hover:text-white transition-colors">Help</a></li>
+                <li><a href="/help" className="hover:text-white transition-colors">Help</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Legal</h3>
               <ul className="space-y-2 text-[#9CA3AF]">
-                <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</a></li>
+                <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
